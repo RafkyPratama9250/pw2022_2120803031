@@ -139,6 +139,7 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
+    background-image: url(img/sativa.webp);
     color: #333;
 
 }
@@ -178,10 +179,10 @@ body {
 }
 
 .hero {
-    height: 250px;
+    height: 280px;
     background-image: url(img/hero2.png);
     background-size: cover;
-    background-position: 0 -200px;
+    background-position: 0 -180px;
     border-bottom: 5px solid lightskyblue;
     border-top: 5px solid salmon;
 
@@ -192,13 +193,18 @@ body {
 }
 
 .content h2 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .content .penulis {
     font-size: 11px;
     margin-top: -5px;
+}
+
+.content .penulis a {
+    color: salmon;
+    text-decoration: none;
 }
 
 .content p {
@@ -208,4 +214,11 @@ body {
 
 .footer {
     background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
 }
