@@ -7,6 +7,6 @@ function pangkat($a, $b)
     $bil = $bil * $a;
   }
   return $bil;
-}
+}x
 
 echo "5 pangkat 4" . " " . "= " . pangkat(5, 4);
