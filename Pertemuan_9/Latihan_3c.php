@@ -10,4 +10,3 @@ function pangkat($a, $b)
 }
 
 echo "5 pangkat 4" . " " . "= " . pangkat(5, 4);
-a
