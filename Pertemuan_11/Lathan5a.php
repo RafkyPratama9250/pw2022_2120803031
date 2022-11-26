@@ -1,8 +1,8 @@
 <?php
 if (isset($_GET["angka"])) {
-  $N = $_GET["angka"];
-  for ($i = $N; $i >= 1; $i--) {
-    for ($x = 1; $x <= $i; $x++) {
+  $a = $_GET["angka"];
+  for ($i = $a; $i >= 1; $i--) {
+    for ($j = 1; $j <= $i; $j++) {
       echo $x . " ";
     }
     echo "<br />";
