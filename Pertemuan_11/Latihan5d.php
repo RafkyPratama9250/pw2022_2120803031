@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  .box {
+  .margin {
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  <div class="box">
+  <div class="margin">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
       Masukan Angka: <input type="number" name="fname">
       <input type="submit" value="Tampilkan">
     </form>
   </div>
 
-  <div class="box">
+  <div class="margin">
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $name = $_POST['fname'];
