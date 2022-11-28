@@ -17,31 +17,48 @@ if (isset($_POST["submit"])) {
   }
 
   .judul {
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: 150px;
+    margin-bottom: 35px;
     text-align: center;
     font-family: Verdana;
-    ;
+    font-size: 40px;
+    color: darkolivegreen;
   }
 
   .kotak {
     position: fixed;
-    width: px;
+    width: 550px;
     height: px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .05), 2px 2px 5px rgba(0, 0, 0, .1);
     text-align: center;
     left: 50%;
-    margin-left: -220px;
+    margin-left: -279px;
     background-color: white;
+    border: 8px solid darkgrey;
   }
 
   .formisian {
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+    word-spacing: 1em;
 
 
+
+  }
+
+  .benarsalah {
+    margin-top: 27px;
+    font-style: italic;
+    color: red;
+
+  }
+
+  .login {
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 </style>
 
@@ -54,22 +71,23 @@ if (isset($_POST["submit"])) {
   <div class="kotak">
     <form action="" method="post">
       <div class="formisian">
-        <label for="username">USERNAME :</label>
-        <input type="text" name="username" id="username">
+        <label for="username">Username </label>
+        <input style="font-size: 17px; width:25; border: 4px solid darkgrey" type="text" name="username" id="username">
       </div>
-      <div>
-        <label for="password">PASSWORD :</label>
-        <input type="text" name="password" id="password">
+      <div class="formisian">
+        <label for="password">Password </label>
+        <input type="password" s style="font-size: 17px; width:25; border: 4px solid darkgrey" name="password" id="password">
       </div>
-      <div>
-        <button type="submit" name="submit">Login</button>
+      <div class="benarsalah">
+        <?php if (isset($error)) : ?>
+          <p>Username atau Password salah!!</p>
+        <?php endif; ?>
+      </div>
+      <div class="login">
+        <button style="font-size: 17px;color:white;background-color:blue; padding: 5px 10px;border-style: outset;" type="submit" name="submit">Log in</button>
       </div>
     </form>
 
-    <?php if (isset($error)) : ?>
-      <p>username atau password salah</p>
-    <?php endif; ?>
-  </div>
 
 </body>
 

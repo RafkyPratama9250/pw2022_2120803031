@@ -20,7 +20,7 @@
   <div class="margin">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
       Masukan Angka: <input type="number" name="fname">
-      <input type="submit" value="Tampilkan">
+      <input type="submit" value="Tampilkan!">
     </form>
   </div>
 
